@@ -1,81 +1,71 @@
-/* Apply these styles to all elements */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* Global reset and base styles */
 * {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    scroll-behavior: smooth; /* Enable smooth scrolling */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-/* Apply these styles to the body element */
+/* Base body styling */
 body {
-    font-family: Arial, sans-serif; /* Set the font family */
-    line-height: 1.6; /* Set the line height */
-    color: black; /* Set the text color */
-    background-color: white; /* Set the background color */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: black;
+  background-color: white;
+  overflow-x: hidden;
 }
 
-/* Apply these styles to paragraph elements inside the body */
+/* Paragraphs inside the body */
 body p {
-    font-size: 1rem; /* Set the font size */
-    color: black; /* Set the text color */
-    max-width: 800px; /* Set the maximum width of the paragraph */
-    margin: 20px auto; /* Add margin around the paragraph and center it */
-    padding: 0 20px; /* Add padding to the left and right */
-    text-align: justify; /* Justify the text to make both sides even */
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: justify;
 }
 
-/* Apply these styles to elements with the class "section" */
+/* Section layout */
 .section {
-    height: 100vh; /* Set the height to 100% of the viewport height */
-    display: flex; /* Use flexbox layout */
-    justify-content: center; /* Center items horizontally */
-    flex-direction: column; /* Arrange items in a column */
-    text-align: center; /* Center text */
-    padding: 20px; /* Add padding */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
-/* Apply these styles to bold elements */
-b {
-    color: mediumseagreen; /* Set the text color */
-}
-
-/* Apply these styles to h1 elements */
+/* Heading styles */
 h1 {
-    font-size: 6rem; /* Set the font size */
-    line-height: 1; /* Set the line height */
-    color: black; /* Set the text color */
+  font-size: 6rem;
+  line-height: 1;
 }
 
-/* Apply these styles to h2 elements */
 h2 {
-    font-size: 2rem; /* Set the font size */
-    color: black; /* Set the text color */
+  font-size: 2rem;
 }
 
-/* Apply these styles to paragraph elements */
-p {
-    font-size: 1rem; /* Set the font size */
-    color: black; /* Set the text color */
+/* Bold text color */
+b {
+  color: mediumseagreen;
 }
 
-/* Apply these styles to elements with the class "contact-icons" */
+/* Contact icons styling */
 .contact-icons {
-    margin-top: 20px; /* Add margin to the top */
-    justify-content: center; /* Center items horizontally */
-    display: flex; /* Use flexbox layout */
-    gap: 15px; /* Add space between items */
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-/* Apply these styles to anchor elements inside elements with the class "contact-icons" */
 .contact-icons a {
-    text-decoration: none; /* Remove underline from links */
-    color: black; /* Set the text color */
-    font-size: 2rem; /* Set the font size */
-    transition: color 0.3s; /* Smooth transition for color change */
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s;
+    color: black;
 }
 
-/* Apply these styles to anchor elements inside elements with the class "contact-icons" when hovered */
 .contact-icons a:hover {
-    color: mediumseagreen; /* Change color on hover */
+  color: mediumseagreen;
 }
