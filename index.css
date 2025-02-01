@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+body p {
+    font-size: 1rem;
+    color: black;
+    max-width: 800px;  /* Set the max width of the paragraph */
+    margin: 20px auto; /* Adds margin around the paragraph and centers it */
+    padding: 0 20px;   /* Optional padding to add space on the left and right */
+    text-align: justify; /* Justifies the text to make both sides even */
+}
+
+
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+b {
+    color: mediumseagreen;
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 1;
+    color:black;
+}
+
+h2 {
+    font-size: 2rem;
+    color:black;
+}
+
+p {
+    font-size: 1rem;
+    color:black
+}
+
+.contact-icons {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+
+.contact-icons a {
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: mediumseagreen ; /* Change color on hover */
+}
+
+
