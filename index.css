@@ -49,7 +49,7 @@ p {
 
 /* Heading styles */
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   line-height: 1;
 }
 
@@ -94,21 +94,27 @@ h3 {
 }
 
 .typewriter {
-  overflow: hidden;                    /* Hide text until revealed */
-  white-space: nowrap;                 /* Keep text on one line */
-  border-right: .15em solid mediumseagreen; /* The blinking caret */
-  animation: 
-    typewriter 3s steps(44, end) 1s 1 normal both,
-    blink-caret 750ms step-end infinite ;
+    overflow: hidden;                    /* Hide text until revealed */
+    white-space: nowrap;                 /* Keep text on one line */
+    border-right: .15em solid mediumseagreen; /* The blinking caret */
+    animation: 
+        typewriter 3s steps(44, end) 1s 1 normal both,
+        blink-caret 750ms step-end infinite ;
 }
 
 @keyframes typewriter {
-  0% { width: 0%; }
-  90% { width: 100%; } /* Type out the text */
-  100% { width: 100%; } /* Hold for a realistic pause */
+    0% { width: 0%; }
+    90% { width: 100%; } /* Type out the text */
+    100% { width: 100%; } /* Hold for a realistic pause */
 }
 
 @keyframes blink-caret {
-  0%, 100% { border-color: transparent; }
-  50% { border-color: mediumseagreen; }
+    0%, 100% { border-color: transparent; }
+    50% { border-color: mediumseagreen; }
+}
+
+@media (max-width: 480px) {
+    .typewriter {
+        white-space: normal; /* Allow line break on very small screens */
+    }
 }
