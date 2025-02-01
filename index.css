@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-/* Global reset and base styles */
+/* Global reset */
 * {
   margin: 0;
   padding: 0;
@@ -12,28 +12,39 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
-  color: black;
   background-color: white;
+  color: black;
   overflow-x: hidden;
 }
 
-/* Paragraphs inside the body */
-body p {
+/* Container: limits width and centers content */
+.container {
+  max-width: 960px; /* Adjust this value for your preferred maximum width */
+  margin: 0 auto;   /* Centers the container horizontally */
+  padding: 0 20px;  /* Adds horizontal padding */
+}
+
+/* Paragraph styling */
+p {
   font-size: 1rem;
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
   text-align: justify;
+  margin-top: 20px;
+}
+
+/* Skill grid styling */
+.skill-grid {
+  display: block;
+  margin-top: 40px;
 }
 
 /* Section layout */
 .section {
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 20px;
 }
 
 /* Heading styles */
@@ -43,12 +54,16 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
-/* Bold text color */
-b {
-  color: mediumseagreen;
+h3 {
+  font-size: 1rem;
+}
+
+.company-and-date {
+  font-size: 0.8rem;
+  color: gray;
 }
 
 /* Contact icons styling */
@@ -58,14 +73,22 @@ b {
   gap: 15px;
   margin-top: 20px;
 }
-
 .contact-icons a {
   font-size: 2rem;
   text-decoration: none;
   transition: color 0.3s;
-    color: black;
+  color: black
 }
-
 .contact-icons a:hover {
   color: mediumseagreen;
+}
+
+.experience {
+  display: block;
+  margin-top: 40px;
+}
+
+.projects {
+  display: block;
+  margin-top: 40px;
 }
