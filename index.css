@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
 
 /* Global reset */
 * {
@@ -10,7 +10,7 @@
 
 /* Base body styling */
 body {
-  font-family: 'Geist', sans-serif;
+  font-family: "Geist", sans-serif;
   line-height: 1.5;
   background-color: white;
   color: black;
@@ -20,8 +20,8 @@ body {
 /* Container: limits width and centers content */
 .container {
   max-width: 960px; /* Adjust this value for your preferred maximum width */
-  margin: 0 auto;   /* Centers the container horizontally */
-  padding: 0 20px;  /* Adds horizontal padding */
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 20px; /* Adds horizontal padding */
 }
 
 /* Paragraph styling */
@@ -77,7 +77,7 @@ h3 {
   font-size: 2rem;
   text-decoration: none;
   transition: color 0.3s;
-  color: black
+  color: black;
 }
 .contact-icons a:hover {
   color: mediumseagreen;
@@ -94,27 +94,37 @@ h3 {
 }
 
 .typewriter {
-    overflow: hidden;                    /* Hide text until revealed */
-    white-space: nowrap;                 /* Keep text on one line */
-    border-right: .15em solid mediumseagreen; /* The blinking caret */
-    animation: 
-        typewriter 3s steps(44, end) 1s 1 normal both,
-        blink-caret 750ms step-end infinite ;
+  overflow: hidden; /* Hide text until revealed */
+  white-space: nowrap; /* Keep text on one line */
+  border-right: 0.15em solid mediumseagreen; /* The blinking caret */
+  animation: typewriter 3s steps(44, end) 1s 1 normal both,
+    blink-caret 750ms step-end infinite;
 }
 
 @keyframes typewriter {
-    0% { width: 0%; }
-    90% { width: 100%; } /* Type out the text */
-    100% { width: 100%; } /* Hold for a realistic pause */
+  0% {
+    width: 0%;
+  }
+  90% {
+    width: 100%;
+  } /* Type out the text */
+  100% {
+    width: 100%;
+  } /* Hold for a realistic pause */
 }
 
 @keyframes blink-caret {
-    0%, 100% { border-color: transparent; }
-    50% { border-color: mediumseagreen; }
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: mediumseagreen;
+  }
 }
 
 @media (max-width: 480px) {
-    .typewriter {
-        white-space: normal; /* Allow line break on very small screens */
-    }
+  .typewriter {
+    white-space: normal; /* Allow line break on very small screens */
+  }
 }
