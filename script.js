@@ -1,23 +1,24 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    const icon = themeToggle.querySelector("i");
 
-let currentLanguage = 'en'; // default 
- 
-function toggleDarkMode() { //darkmode toggle
-    document.body.classList.toggle('dark-mode');
-}
+    // Check if the user has a saved preference
+    if (localStorage.getItem("theme") === "light") {
+        body.classList.add("light-mode");
+        icon.classList.replace("fa-moon", "fa-sun");
+    }
 
-function toggleLanguage() {
-    // Toggle between 'en' and 'de'
-    currentLanguage = (currentLanguage === 'en') ? 'de' : 'en';
-    
-    // Update all elements with the class "lang"
-    document.querySelectorAll('.lang').forEach(el => {
-        const newText = el.getAttribute('data-lang-' + currentLanguage);
-        if (newText) {
-            el.innerHTML = newText;
+    themeToggle.addEventListener("click", () => {
+        body.classList.toggle("light-mode");
+
+        // Update icon
+        if (body.classList.contains("light-mode")) {
+            icon.classList.replace("fa-moon", "fa-sun");
+            localStorage.setItem("theme", "light");
+        } else {
+            icon.classList.replace("fa-sun", "fa-moon");
+            localStorage.setItem("theme", "dark");
         }
     });
-
-    // Update button text to opposite option
-    const toggleBtn = document.querySelector('.toggle-language');
-    toggleBtn.innerText = (currentLanguage === 'en') ? 'Switch to German' : 'Switch to English';
-}
+});
