@@ -146,6 +146,17 @@ h1 {
 .dark-mode .toggle-button:hover {
     color: orangered;
 }
+
+.dark-mode .toggle-language {
+    border: none;
+    color: white;
+}
+
+.dark-mode .toggle-language:hover {
+    color: orangered;
+}
+
+/* Responsive design */
 @media (max-width: 768px) {
     h1 {
         font-size: 15vw;
