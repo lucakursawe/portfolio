@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 
@@ -6,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luca Kursawe</title>
-    <meta name="description" content="Portfolio of Luca Kursawe, a Computer Science student at Rheinische Hochschule Köln with experience in e-learning, technical support, and e-commerce.">
+    <meta name="description"
+        content="Portfolio of Luca Kursawe, a Computer Science student at Rheinische Hochschule Köln with experience in e-learning, technical support, and e-commerce.">
     <meta name="author" content="Luca Kursawe">
-    <meta name="keywords" content="Luca Kursawe, Computer Science, Informatik, Rheinische Hochschule Köln, RFH, RH Köln, lucakursawe, kursawe luca, informatik b.sc.">
+    <meta name="keywords"
+        content="Luca Kursawe, Computer Science, Informatik, Rheinische Hochschule Köln, RFH, RH Köln, lucakursawe, kursawe luca, informatik b.sc.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -29,80 +30,132 @@
                 <i class="fa-brands fa-unsplash"></i>
             </a>
         </div>
+        <!-- Dark mode and language toggle buttons -->
         <button class="toggle-button" onclick="toggleDarkMode()">Switch to Dark Mode</button>
+        <button class="toggle-language" onclick="toggleLanguage()">Switch to German</button>
     </div>
 
     <div class="hero">
-        <h1>Luca<br>Kursawe</h1>
+        <h1 class="lang" data-lang-en="Luca<br>Kursawe" data-lang-de="Luca<br>Kursawe">
+            Luca<br>Kursawe
+        </h1>
     </div>
 
     <div class="container">
-        <div class="section-content">I am a <b>Computer Science student</b> at Rheinische Hochschule Köln, driven by a
-            passion
-            for using technology to create things
-            that are nice to look at and work haha. Currently, I work as a <b>assistant coordinator for e-learning and
-                technical
-                support</b> at RST Gruppe Schnirch, where I manage the implementation of digital training and
-            examination
-            systems and
-            develop interactive training materials for the intralogistics sector. Additionally, I have <b>experience in
-                e-commerce</b>,
-            where I contributed to website optimization using WordPress and assisted in data analysis to support
-            business
-            decision-making. In my free time i strength train, take lots of pictures and work on personal projects.
+        <div class="section-content lang"
+            data-lang-en="I am a <b>Computer Science student</b> at Rheinische Hochschule Köln, with a passion for using technology to create things that not only work, but also look good. Currently, I work as a <b>assistant coordinator for e-learning and technical support</b> at RST Gruppe Schnirch, where I manage the implementation of digital training and examination systems and develop interactive training materials for the intralogistics sector. Additionally, I have <b>experience in e-commerce</b>, where I contributed to website optimization using WordPress and assisted in data analysis to support business decision-making. In my free time I strength train, take lots of pictures and work on personal projects."
+            data-lang-de="Ich bin ein <b>Informatikstudent</b> an der Rheinischen Hochschule Köln, mit einer Leidenschaft für das Erschaffen von Dingen, die nicht nur funktionieren, sondern auch ansprechend aussehen. Zurzeit arbeite ich als <b>Assistent für E-Learning und technischen Support</b> bei der RST Gruppe Schnirch, wo ich die Implementierung von digitalen Schulungs- und Prüfungssystemen manage und interaktive Trainingsmaterialien für die Intralogistik entwickle. Außerdem bringe ich <b>Erfahrung im E-Commerce</b> mit, wo ich an der Optimierung von Websites mit WordPress mitgewirkt und Datenanalysen zur Unterstützung von Geschäftsentscheidungen durchgeführt habe. In meiner Freizeit mache ich Krafttraining, mache viele Fotos und arbeite an persönlichen Projekten.">
+            I am a <b>Computer Science student</b> at Rheinische Hochschule Köln, with a passion for using technology to create
+            things that not only work, but also look good. Currently, I work as a <b>assistant coordinator for e-learning and
+                technical support</b> at RST Gruppe Schnirch, where I manage the implementation of digital training and examination
+            systems and develop interactive training materials for the intralogistics sector. Additionally, I have <b>experience in
+                e-commerce</b>, where I contributed to website optimization using WordPress and assisted in data analysis to support
+            business decision-making. In my free time I strength train, take lots of pictures and work on personal projects.
         </div>
     </div>
 
     <div class="container">
-        <div class="section-title">Experience</div>
-        <div class="section-company">Rheinische Hochschule Köln</div>
+        <div class="section-title lang" data-lang-en="Experience" data-lang-de="Erfahrung">
+            Experience
+        </div>
+        <div class="section-company lang" data-lang-en="Rheinische Hochschule Köln"
+            data-lang-de="Rheinische Hochschule Köln">
+            Rheinische Hochschule Köln
+        </div>
         <div class="section-content">
-            <div class="section-job">Informatik B.Sc.</div>
+            <div class="section-job lang" data-lang-en="Informatik B.Sc." data-lang-de="Informatik B.Sc.">
+                Informatik B.Sc.
+            </div>
             <div class="section-content">
                 <ul>
-                    <li>Currently in my 4th semester</li>
-                    <li>Expected graduation in 2026</li>
+                    <li class="lang" data-lang-en="Currently in my 4th semester" data-lang-de="Derzeit im 4. Semester">
+                        Currently in my 4th semester
+                    </li>
+                    <li class="lang" data-lang-en="Expected graduation in 2026"
+                        data-lang-de="Erwarteter Abschluss 2026">
+                        Expected graduation in 2026
+                    </li>
                 </ul>
-                <div class="section-company">RST Gruppe Schnirch</div>
-                <div class="section-job">Assistant Coordinator for E-Learning and Technical Support</div>
+                <div class="section-company lang" data-lang-en="RST Gruppe Schnirch" data-lang-de="RST Gruppe Schnirch">
+                    RST Gruppe Schnirch
+                </div>
+                <div class="section-job lang" data-lang-en="Assistant Coordinator for E-Learning and Technical Support"
+                    data-lang-de="Assistent für E-Learning und technischen Support">
+                    Assistant Coordinator for E-Learning and Technical Support
+                </div>
                 <div class="section-content">
                     <ul>
-                        <li>Coordinated the implementation of digital training and testing systems with external
-                            providers,
-                            streamlining processes
-                            and boosting system reliability.</li>
-                        <li>Developed interactive learning modules and training materials for intralogistics, enhancing
-                            user
-                            engagement and
-                            comprehension.</li>
-                        <li>Analyzed and optimized digital tools and workflows, contributing to increased operational
-                            efficiency and improved
-                            employee satisfaction.</li>
-                        <li>Optimized the company website using WordPress and created marketing collateral with Adobe
-                            Creative Cloud, strengthening
-                            online brand presence.</li>
-                        <li>Facilitated e-commerce process coordination between internal teams and external partners,
-                            ensuring seamless
-                            collaboration and enhanced communication.</li>
+                        <li class="lang"
+                            data-lang-en="Coordinated the implementation of digital training and testing systems with external providers, streamlining processes and boosting system reliability."
+                            data-lang-de="Koordinierte die Implementierung von digitalen Schulungs- und Testsystemen mit externen Anbietern, wodurch Prozesse gestrafft und die Systemzuverlässigkeit verbessert wurden.">
+                            Coordinated the implementation of digital training and testing systems with external
+                            providers, streamlining processes and boosting system reliability.
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Developed interactive learning modules and training materials for intralogistics, enhancing user engagement and comprehension."
+                            data-lang-de="Entwickelte interaktive Lernmodule und Trainingsmaterialien für die Intralogistik, um Benutzerengagement und Verständnis zu verbessern.">
+                            Developed interactive learning modules and training materials for intralogistics, enhancing
+                            user engagement and comprehension.
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Analyzed and optimized digital tools and workflows, contributing to increased operational efficiency and improved employee satisfaction."
+                            data-lang-de="Analysierte und optimierte digitale Werkzeuge und Arbeitsabläufe, was zu einer höheren Betriebseffizienz und verbesserter Mitarbeiterzufriedenheit führte.">
+                            Analyzed and optimized digital tools and workflows, contributing to increased operational
+                            efficiency and improved employee satisfaction.
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Optimized the company website using WordPress and created marketing collateral with Adobe Creative Cloud, strengthening online brand presence."
+                            data-lang-de="Optimierte die Unternehmenswebsite mit WordPress und erstellte Marketingmaterialien mit Adobe Creative Cloud, um die Online-Präsenz zu stärken.">
+                            Optimized the company website using WordPress and created marketing collateral with Adobe
+                            Creative Cloud, strengthening online brand presence.
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Facilitated internal e-commerce process coordination ensuring seamless collaboration and enhanced communication."
+                            data-lang-de="Ermöglichte die interne Koordination von E-Commerce-Prozessen was eine nahtlose Zusammenarbeit und verbesserte Kommunikation gewährleistete.">
+                            Facilitated internal e-commerce process coordination ensuring seamless collaboration and enhanced communication.
+                        </li>
                     </ul>
                 </div>
             </div>
 
             <div class="container">
-                <div class="section-title">Projects</div>
-                <div class="section-company">REP.js</div>
-                <div class="section-job">Powerlifting Web Application</div>
+                <div class="section-title lang" data-lang-en="Projects" data-lang-de="Projekte">
+                    Projects
+                </div>
+                <div class="section-company lang" data-lang-en="REP.js" data-lang-de="REP.js">
+                    REP.js
+                </div>
+                <div class="section-job lang" data-lang-en="Powerlifting Web Application"
+                    data-lang-de="Powerlifting Web-Anwendung">
+                    Powerlifting Web Application
+                </div>
                 <div class="section-content">
                     <ul>
-                        <li>Development of a React & Next.js web application for the calculation and tracking of the
-                            one-repeat maximum (E1RM).</li>
-                        <li>Integration of data visualizations and animations (with Chart.js, Framer Motion and React
-                            Transition Group) for an
-                            engaging user experience.</li>
-                        <li>Implementation of secure profile management using Supabase authentication and Implementation
-                            of robust error handling.</li>
+                        <li class="lang"
+                            data-lang-en="Development of a React & Next.js web application for the calculation and tracking of the one-repeat maximum (E1RM)."
+                            data-lang-de="Entwicklung einer React & Next.js Webanwendung zur Berechnung und Verfolgung des Ein-Wiederholungs-Maximums (E1RM).">
+                            Development of a React & Next.js web application for the calculation and tracking of the
+                            one-repeat maximum (E1RM).
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Integration of data visualizations and animations (with Chart.js, Framer Motion and React Transition Group) for an engaging user experience."
+                            data-lang-de="Integration von Datenvisualisierungen und Animationen (mit Chart.js, Framer Motion und React Transition Group) für ein ansprechendes Benutzererlebnis.">
+                            Integration of data visualizations and animations (with Chart.js, Framer Motion and React
+                            Transition Group) for an engaging user experience.
+                        </li>
+                        <li class="lang"
+                            data-lang-en="Implementation of secure profile management using Supabase authentication and implementation of robust error handling."
+                            data-lang-de="Implementierung eines sicheren Profilmanagements mittels Supabase-Authentifizierung und robuster Fehlerbehandlung.">
+                            Implementation of secure profile management using Supabase authentication and implementation
+                            of robust error handling.
+                        </li>
                     </ul>
                 </div>
-                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
