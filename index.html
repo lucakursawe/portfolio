@@ -1,129 +1,101 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luca Kursawe</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <header class="section">
-            <h1 class="typewriter">Luca Kursawe</h1>
-            <div class="contact-icons">
-                <a href="mailto:lucakursawe@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/lucakursawe" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/lucakursawe" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://unsplash.com/lucakursawe" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-unsplash"></i>
-                </a>
-            </div>
-            <p>
-                I am a <b>Computer Science student at Rheinische Hochschule Köln</b>, driven by a passion for using
-                technology to create things that are nice to look at and work haha. Currently, I work as a <b>assistant
-                    coordinator for e-learning and technical support</b> at RST Gruppe Schnirch, where I manage the
-                implementation of <b>digital training and examination systems</b> and develop <b>interactive training
-                    materials</b>
-                for the <b>intralogistics</b> sector. Additionally, I have <b>experience in e-commerce</b>, where I
-                contributed to website
-                optimization using <b>WordPress</b> and assisted in data analysis to support business decision-making.
-                In my free time i strength train, take lots of pictures and work on personal projects.
-            </p>
-        </header>
-        <section class="section">
-            <h1>Experience</h1>
-            <div class="experience">
-                <div class="experience-object">
-                    <p>
-                        <b>Informatik B.Sc</b>
-                    <p class="company-and-date">Sep 2023 - Present | Rheinische Hochschule Köln</p>
-                    </p>
-                    <p>
-                        - still studying
-                    </p>
-                </div>
-                <div class="experience-object">
-                    <p>
-                        <b>E-Learning, E-Commerce & Technical Support | Student</b>
-                    <p class="company-and-date">2023 - Present | RST Gruppe Schnirch - RST Handels GmbH</p>
-                    </p>
-                    <p>
-                        - Coordinated the implementation of digital training and testing systems with external
-                        providers,
-                        streamlining processes
-                        and boosting system reliability.
-                    </p>
-                    <p>
-                        - Developed interactive learning modules and training materials for intralogistics, enhancing
-                        user
-                        engagement and
-                        comprehension.
-                    </p>
-                    <p>
-                        - Analyzed and optimized digital tools and workflows, contributing to increased operational
-                        efficiency
-                        and improved
-                        employee satisfaction.
-                    </p>
-                    <p>
-                        - Optimized the company website using WordPress and created marketing collateral with Adobe
-                        Creative
-                        Cloud, strengthening
-                        online brand presence.
-                    </p>
-                    <p>
-                        - Facilitated e-commerce process coordination between internal teams and external partners,
-                        ensuring
-                        seamless
-                        collaboration and enhanced communication.
-                    </p>
-
-        </section>
-
-        <section class="section">
-            <h1>Skills</h1>
-            <div class="skill-grid">
-                <div class="skill">HTML</div>
-                <div class="skill">CSS</div>
-                <div class="skill">JavaScript</div>
-                <div class="skill">MySQL</div>
-            </div>
-        </section>
-
-
-        <section class="section">
-            <h1>Projects</h1>
-            <div class="projects">
-                <div class="projects-object">
-                    <p>
-                        <b>Powerlifting Web Application | REP.js</b>
-                    <p class="company-and-date">2024 - Present</p>
-                    </p>
-                    <p>
-                        - Development of a React & Next.js web application for the calculation and tracking
-                        of the one-repeat maximum (E1RM).
-                    </p>
-                    <p>
-                        - Integration of data visualizations and animations (with Chart.js, Framer Motion
-                        and React Transition Group) for an engaging user experience.
-                    </p>
-                    <p>
-                        - Implementation of secure profile management using Supabase authentication and
-                        Implementation of robust error handling.
-                    </p>
-                </div>
-        </section>
+<div class="top-bar">
+    <div class="social-icons">
+        <a href="mailto:lucakursawe@gmail.com" target="_blank" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lucakursawe" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/lucakursawe" target="_blank" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://unsplash.com/@lucakursawe" target="_blank" title="Unsplash">
+            <i class="fa-brands fa-unsplash"></i>
+        </a>
     </div>
-    <script src="index.js"></script>
+    <button class="toggle-button" onclick="toggleDarkMode()">Switch to Dark Mode</button>
+</div>
+
+    <div class="hero">
+        <h1>Luca<br>Kursawe</h1>
+    </div>
+
+    <div class="container">
+        <div class="section-content">I am a <b>Computer Science student</b> at Rheinische Hochschule Köln, driven by a passion
+            for using technology to create things
+            that are nice to look at and work haha. Currently, I work as a <b>assistant coordinator for e-learning and
+            technical
+            support</b> at RST Gruppe Schnirch, where I manage the implementation of digital training and examination
+            systems and
+            develop interactive training materials for the intralogistics sector. Additionally, I have <b>experience in
+            e-commerce</b>,
+            where I contributed to website optimization using WordPress and assisted in data analysis to support
+            business
+            decision-making. In my free time i strength train, take lots of pictures and work on personal projects.
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-title">Experience</div>
+        <div class="section-company">Rheinische Hochschule Köln</div>
+        <div class="section-job">Informatik B.Sc.</div>
+        <div class="section-content">
+            <ul>
+                <li>Currently in my 4th semester</li>
+                <li>Expected graduation in 2026</li>
+            </ul>
+            <div class="section-company">RST Gruppe Schnirch</div>
+            <div class="section-job">Assistant Coordinator for E-Learning and Technical Support</div>
+            <div class="section-content">
+                <ul>
+                    <li>Coordinated the implementation of digital training and testing systems with external providers,
+                        streamlining processes
+                        and boosting system reliability.</li>
+                    <li>Developed interactive learning modules and training materials for intralogistics, enhancing user
+                        engagement and
+                        comprehension.</li>
+                    <li>Analyzed and optimized digital tools and workflows, contributing to increased operational
+                        efficiency and improved
+                        employee satisfaction.</li>
+                    <li>Optimized the company website using WordPress and created marketing collateral with Adobe
+                        Creative Cloud, strengthening
+                        online brand presence.</li>
+                    <li>Facilitated e-commerce process coordination between internal teams and external partners,
+                        ensuring seamless
+                        collaboration and enhanced communication.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section-title">Projects</div>
+            <div class="section-company">REP.js</div>
+            <div class="section-job">Powerlifting Web Application</div>
+            <div class="section-content">
+                <ul>
+                    <li>Development of a React & Next.js web application for the calculation and tracking of the one-repeat maximum (E1RM).</li>
+                    <li>Integration of data visualizations and animations (with Chart.js, Framer Motion and React Transition Group) for an
+                    engaging user experience.</li>
+                    <li>Implementation of secure profile management using Supabase authentication and Implementation of robust error handling.</li>
+                </ul>
+            </div>
+
+
+
+        <script src="script.js"></script>
 </body>
 
 </html>
