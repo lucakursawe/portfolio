@@ -1,173 +1,224 @@
-/* style.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* revamped style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* CSS Variables for easy theming and consistency */
+:root {
+  /* Fonts */
+  --font-body: 'Poppins ', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  
+  /* Colors */
+  --color-bg-light: #ffffff;
+  --color-text-light: #000000;
+  --color-bg-dark: #121212;
+  --color-text-dark: #ffffff;
+  --color-accent: orangered;
+  
+  /* Spacing */
+  --spacing-small: 10px;
+  --spacing-medium: 20px;
+  --spacing-large: 50px;
+}
 
+/* Reset & Global Box-Sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Global Styles */
 body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    transition: background 0.3s, color 0.3s;
+  font-family: var(--font-body);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-light);
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-b {
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-b:hover {
-    color: orangered;
-}
+/* Dark Mode */
 .dark-mode {
-    background-color: #121212;
-    color: white;
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
 }
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: left;
-}
-h1 {
-    font-size: 10vw;
-    color: orangered;
-    font-family: "Lora";
-    font-weight: bold;
-    text-transform: uppercase;
-    margin: 0;
-}
-.container {
-    width: 90vw;
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 5vh 0;
-}
-.section-title {
-    font-size: 3vw;
-    font-family: "Lora";
-    font-weight: bold;
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-}
-.section-content {
-    font-size: 1.5vw;
-    max-width: 800px;
-    text-align: left;
-    margin: auto;
 
-}
+/* Top Bar */
 .top-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  align-items: center;
+  padding: var(--spacing-small) var(--spacing-medium);
+  position: relative;
 }
 
-/* Social icons container */
+/* Social Icons */
+.social-icons {
+top: 0px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+}
+
 .social-icons a {
   margin-right: 15px;
   font-size: 1.5em;
-  color: inherit; /* Uses the current text color */
+  color: inherit;
   text-decoration: none;
-  transition: 0.3s;
+  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: orangered;
+  color: var(--color-accent);
 }
 
-/* Remove right margin from the last icon */
 .social-icons a:last-child {
   margin-right: 0;
 }
 
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 var(--spacing-medium);
+  text-align: left;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-heading);
+  /* distance between text */
+  
+    line-height: 1;
+  font-size: 10vw;
+  font-weight: 600; /*semibold*/
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
+}
+
+/* Section Titles */
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 3vw;
+  font-weight: light;
+  margin-top: 10vh;
+  margin-bottom: 5vh;
+}
+
+/* Section Content */
+.section-content {
+  font-size: 1.5vw;
+  max-width: 800px;
+  margin: 0 auto 5vh;
+  text-align: left;
+}
+
+/* Job Section */
 .section-job {
-    font-weight: bold;
-    font-size: 1.5vw;
-    max-width: 800px;
-    margin-top: 5vh;
-    text-align: left;
-    margin: auto;
-    transition: 0.3s;
+  font-size: 1.5vw;
+  max-width: 800px;
+  margin: 5vh auto 0;
+  text-align: left;
+  transition: color 0.3s ease;
 }
 
 .section-job:hover {
-    color: orangered;
+  color: var(--color-accent);
 }
+
+/* Company Section */
 .section-company {
-    font-size: 1.5vw;
-    max-width: 800px;
-    margin-top: 5vh;
-    text-align: left;
-    margin: auto;
+  font-size: 1.5vw;
+  max-width: 800px;
+  margin: 5vh auto 0;
+  text-align: left;
 }
 
-.toggle-button {
-    position: absolute;
-    color: black;
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1vw;
-    transition: 0.3s;
-    margin-top: 50px; /* Add margin to avoid overlap */
-}
-
+/* Toggle Buttons for Dark Mode / Language Switch */
+.toggle-button,
 .toggle-language {
-    top: 10px;
-    right: 10px;
-    padding: 10px 15px;
-    position: absolute;
-    color: black;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1vw;
-    transition: 0.3s;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1vw;
+  transition: color 0.3s ease;
+  z-index: 1000;
 }
 
+/* Ensure toggle buttons don’t overlap (only one gets extra top margin) */
+.toggle-button {
+  margin-top: var(--spacing-large);
+}
+
+.toggle-button:hover,
 .toggle-language:hover {
-    color: orangered;
+  color: var(--color-accent);
 }
 
-.toggle-button:hover {
-    color: orangered;
-}
-.dark-mode .toggle-button {
-    border: none;
-    color: white;
-}
-
-.dark-mode .toggle-button:hover {
-    color: orangered;
-}
-
+.dark-mode .toggle-button,
 .dark-mode .toggle-language {
-    border: none;
-    color: white;
+  color: var(--color-text-dark);
 }
 
+.dark-mode .toggle-button:hover,
 .dark-mode .toggle-language:hover {
-    color: orangered;
+  color: var(--color-accent);
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 768px) {
-    h1 {
-        font-size: 15vw;
-    }
-    .section-title {
-        font-size: 5vw;
-    }
-    .section-content {
-        font-size: 3vw;
-    }
-    .toggle-button {
-        font-size: 3vw;
-    }
+  h1 {
+    font-size: 15vw;
+  }
+  
+  .section-title {
+    font-size: 5vw;
+  }
+  
+  .section-content {
+    font-size: 3vw;
+  }
+  
+  .toggle-button,
+  .toggle-language {
+    font-size: 3vw;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    width: 95%;
+    padding: 2vh 0;
+  }
+  
+  .top-bar {
+    padding: 5px 10px;
+  }
+  
+  .social-icons a {
+    font-size: 2em;
+  }
+  
+  .section-job,
+  .section-company {
+    font-size: 4vw;
+    margin-top: 2vh;
+  }
 }
