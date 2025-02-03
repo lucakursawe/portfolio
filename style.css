@@ -136,12 +136,9 @@ nav a:hover {
     font-size: 1rem;
     text-transform: lowercase;
     font-weight: light;
-    text-transform: left;
-    text-align: left;
     cursor: pointer;
     transition: color 0.3s ease, opacity 0.3s ease;
-        padding: var(--spacing-lg);
-
+    padding: var(--spacing-sm);
 }
 
 #theme-toggle:hover {
@@ -169,41 +166,57 @@ nav a:hover {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+    :root {
+        --spacing-lg: 40px; /* Smaller spacing for mobile */
+    }
+
     .hero-wrapper {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         height: auto;
         padding: var(--spacing-md);
     }
 
     .hero {
         width: 100%;
+        align-items: center;
+        text-align: center;
+        margin-bottom: var(--spacing-md);
+    }
+
+    .hero h1 {
+        margin-top: var(--spacing-lg); /* Add spacing above the heading */
+    }
+
+    .hero p {
+        font-size: 1.5rem; /* Fixed font size */
+        max-width: 90%;
     }
 
     nav {
         width: 100%;
-        align-items: flex-start;
-        margin-top: var(--spacing-lg);
-    }
-
-    .hero p {
-        font-size: 3vw;
-        max-width: 70%;
+        align-items: center;
+        text-align: center;
+        margin-top: var(--spacing-md);
     }
 
     nav a {
-        font-size: 12vw;
+        font-size: 1.5rem; /* Fixed font size */
+        margin-bottom: var(--spacing-sm);
     }
+
+    p, ul {
+        max-width: 100%; /* Allow text to fill the container */
+    }
+
+    #theme-toggle {
+        position: relative; /* Switch to relative positioning */
+        top: auto;
+        left: auto;
+        margin-bottom: var(--spacing-md); /* Add spacing below the toggle */
+        text-align: center; /* Center the toggle text */
+        width: 100%; /* Make it full width */
+    }
+
+
 }
-
-@media (max-width: 480px) {
-    .hero p {
-        font-size: 4vw;
-        max-width: 90%;
-    }
-
-    nav a {
-        font-size: 15vw;
-    }
-}
-
